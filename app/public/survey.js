@@ -1,24 +1,30 @@
 
-var config = {
-    ".chosen-select": {},
-    ".chosen-select-deselect": {
-        allow_single_deselect: true
-    },
-    ".chosen-select-no-single": {
-        disable_search_threshold: 10
-    },
-    ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-    },
-    ".chosen-select-width": {
-        width: "95%"
-    }
-};
+// var config = {
+//     ".chosen-select": {},
+//     ".chosen-select-deselect": {
+//         allow_single_deselect: true
+//     },
+//     ".chosen-select-no-single": {
+//         disable_search_threshold: 10
+//     },
+//     ".chosen-select-no-results": {
+//         no_results_text: "Oops, nothing found!"
+//     },
+//     ".chosen-select-width": {
+//         width: "95%"
+//     }
+// };
 
 // Capturing the form inputs
-$("#submit").on("click", (event) => {
+$("#submit").on("click", function(event)  {
     event.preventDefault();
 
+    function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+            if 
+        })
+    }
     // Creating an object for the user's data input
     var userData = {
         name: $("#name").val(),
@@ -44,11 +50,12 @@ $("#submit").on("click", (event) => {
         $.post("/api/friends", userData, (data) => {
 
             // Grabbing the result from the AJAX post so that the "best" matches name and photo are displayed
-            $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
+            // $("#match-name").text(data.name);
+            // $("#match-img").attr("src", data.photo);
 
             // Showing the modal with best match
-            $("#results-modal").modal("toggle");
+            // $("#results-modal").modal("toggle");
+            alert("working");
         } );
 
 });
