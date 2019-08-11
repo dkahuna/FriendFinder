@@ -1,4 +1,4 @@
-var friends = require("../data/friends");
+var friends = require("../data/friends.js");
 
 module.exports = function (app) {
 
@@ -52,8 +52,8 @@ module.exports = function (app) {
         // the database will always return that the user is the user's best friend).
         friends.push(userData);
 
-        //Return a JSON with the user's bestMatch. This will be used by the HTML in the next page.
+        //Return a JSON with the user's bestMatch.
         res.json(bestMatch);
     });
-    
+
 }
