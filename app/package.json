@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "Friend Finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Matching up Friends",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
