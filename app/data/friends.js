@@ -56,7 +56,7 @@ var friends = [
 
   {
     name: "Rachel",
-    photo: "https://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2014/WRN/050514-friends-anniversary-1-567_0.jpg?itok=ydOFxq0q"
+    photo: "https://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2014/WRN/050514-friends-anniversary-1-567_0.jpg?itok=ydOFxq0q",
     scores: [
         3,
         3,
