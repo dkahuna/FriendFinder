@@ -233,6 +233,8 @@ $("#submit").on("click", function(event)  {
                     $("#q10").val()
                 ]
         };
+
+        //creates the MODAL
         var currentURL = window.location.origin;
 
         $.post(currentURL + "/api/friends", userData, function(data) {
